@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Festas</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    body {
+        font-family: 'Archivo', sans-serif;
+    }
+</style>
+
+<body class="bg-gray-300 overflow-x-hidden">
+    <div>
+        <div class="bg-black w-screen">
+            <div class="pt-20 pb-32 mx-auto w-[700px]">
+                <div class="w-[319px]">
+                    <h1 class="text-4xl text-white">Crie e compartilhe seu evento.</h1>
+                    <p class="text-base text-cyan-400 mt-6">O primeiro passo, é preencher esse formulário de inscrição.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#FFFFFF] max-w-175 mx-auto mt-[-70px] rounded-sm pt-20">
+        <div class="border-b-2 border-gray-300 max-w-[608px] mx-auto">
+            <h1 class="text-2xl pb-5">Informações do Evento</h1>
+        </div>
+
+        <div class="flex max-w-[608px] mx-auto mt-7">
+            <p class="">Título do evento</p>
+            <p class="ml-5 text-gray-300">(mínimo 8 caracteres)</p>
+        </div>
+
+        <div class="mx-auto max-w-[608px] mt-3">
+            <input class="border-gray-300 border-2 rounded-sm w-full p-4 focus:outline-none" type="text">
+        </div>
+
+
+        <div class="flex max-w-[608px] mx-auto mt-7">
+            <p class="">Link do evento</p>
+            <p class="ml-5 text-gray-300">(comece com https://)</p>
+        </div>
+
+        <div class="mx-auto max-w-[608px] mt-3">
+            <input class="border-gray-300 border-2 rounded-sm w-full p-4 focus:outline-none" type="text">
+        </div>
+
+
+        <div class="flex max-w-[608px] mx-auto mt-7">
+            <p class="">Whatsapp para contato</p>
+            <p class="ml-5 text-gray-300">(somente números)</p>
+        </div>
+
+        <div class="mx-auto max-w-[608px] mt-3">
+            <input class="border-red-500 border-2 rounded-sm w-full p-4 focus:outline-none" type="text">
+        </div>
+
+
+        <div class="flex max-w-[608px] mx-auto mt-7">
+            <p class="">Informações extras</p>
+        </div>
+
+        <div class="mx-auto max-w-[608px] mt-3">
+            <input class="border-gray-300 border-2 rounded-sm w-full p-4 focus:outline-none h-50" type="text">
+        </div>
+
+
+        <div class="flex max-w-[608px] mx-auto mt-7">
+            <p class="">Categoria</p>
+        </div>
+
+        <div class="mx-auto max-w-[608px] mt-3">
+            <input class="border-gray-300 border-2 rounded-sm w-full p-4 focus:outline-none text-gray-300" type="text"
+                placeholder="Tipo do evento">
+        </div>
+
+
+        <div class="border-b-2 border-gray-300 max-w-[608px] mx-auto mt-[48px]">
+            <h1 class="text-2xl pb-5">Privacidade</h1>
+        </div>
+
+        <div class="flex max-w-[608px] mx-auto mt-7">
+            <p class="">E-mail do administrador</p>
+            <p class="ml-5 text-gray-300">(digite um email válido)</p>
+        </div>
+
+        <div class="mx-auto max-w-[608px] mt-3">
+            <input class="border-gray-300 border-2 rounded-sm w-full p-4 focus:outline-none" type="text">
+        </div>
+
+
+        <div class="flex max-w-[608px] mx-auto mt-7">
+            <p class="">Senha de acesso para os participantes</p>
+            <p class="ml-5 text-gray-300">(mínimo 8 caracteres)</p>
+        </div>
+
+        <div class="mx-auto max-w-[608px] mt-3">
+            <input class="border-gray-300 border-2 rounded-sm w-full p-4 focus:outline-none" type="text">
+        </div>
+
+
+        <div class="flex mx-auto max-w-[608px] mt-7">
+            <input type="checkbox" class="h-6 w-6 border-[#E6E6F0] text-[#42D3FF]">
+            <p class="ml-5">Evento privado</p>
+        </div>
+
+
+        <div class="border-b-2 border-gray-300 max-w-[608px] mx-auto mt-[48px]">
+            <h1 class="text-2xl pb-5">Dia e hora</h1>
+        </div>
+
+
+        <div class="max-w-[608px] flex mx-auto gap-5">
+            <div class="w-[300px]">
+                <div class="flex mx-auto mt-7">
+                    <p class="">Data</p>
+                </div>
+
+                <div class="mx-auto mt-3">
+                    <input class="border-gray-300 border-2 rounded-sm w-full p-4 focus:outline-none" type="text">
+                </div>
+            </div>
+
+
+            <div class="w-[190px]">
+                <div class="flex mx-auto mt-7">
+                    <p class="">Das</p>
+                </div>
+
+                <div class="mx-auto mt-3">
+                    <input class="border-gray-300 border-2 rounded-sm w-full p-4 focus:outline-none text-gray-300"
+                        type="text" placeholder="19:00">
+                </div>
+            </div>
+
+
+            <div class="w-[190px]">
+                <div class="flex mx-auto mt-7">
+                    <p class="">Até</p>
+                </div>
+
+                <div class="mx-auto mt-3">
+                    <input class="border-gray-300 border-2 rounded-sm w-full p-4 focus:outline-none text-gray-300"
+                        type="text" placeholder="20:00">
+                </div>
+            </div>
+        </div>
+
+        <div class=" bg-gray-200 w-full py-10 mt-20 border-t-2 border-gray-300 mb-20">
+            <div class="mx-auto max-w-[608px]">
+                <button class="bg-green-500 text-white rounded-md py-4 w-full">Salvar evento</button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
